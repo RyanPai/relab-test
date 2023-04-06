@@ -239,8 +239,8 @@ const SketchColor = (props) => {
     <Box position="relative">
    
       <Box display="flex" alignItems="center" onClick={() => setDisplay((prev) => !prev)}>
-        <Box width="32px" height="32px" bgColor={color} mr={1} border="1px solid gray" borderRadius={8}></Box>
-        <Box border="1px solid" borderRadius={8} overflow="hidden" py={1} px={2} minW="100px">{color}</Box>
+        <Box width="32px" height="32px" bgColor={hexColor} mr={1} border="1px solid gray" borderRadius={8}></Box>
+        <Box border="1px solid" borderRadius={8} overflow="hidden" py={1} px={2} minW="100px">{hexColor}</Box>
       </Box>
       {
         display ?
