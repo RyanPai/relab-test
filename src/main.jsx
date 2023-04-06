@@ -5,6 +5,7 @@ import './index.css';
 import {
   RouterProvider,
   createBrowserRouter,
+  createHashRouter,
   Outlet
 } from "react-router-dom";
 import { ChakraProvider, extendTheme, defineStyle, defineStyleConfig } from '@chakra-ui/react';
@@ -53,7 +54,7 @@ const theme = extendTheme({
   }
 })
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Outlet/>,
